@@ -1,3 +1,0 @@
-﻿  GUI.cpp
-D:\dev\vs\TNOver\TurnOver\TurnOver\src\Window\GUI\GUI.cpp(77,39): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-  TurnOver.vcxproj -> D:\dev\vs\TNOver\TurnOver\TurnOver\TurnOver.exe
