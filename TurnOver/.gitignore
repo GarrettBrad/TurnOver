@@ -1,6 +1,4 @@
 
-.vs/TurnOver/v16/.suo
-.vs/TurnOver/v16/.suo
-TurnOver.vcxproj.user
-TurnOver.vcxproj
-TurnOver.vcxproj.filters
+.vs/
+bin/
+TurnOver/bin/*

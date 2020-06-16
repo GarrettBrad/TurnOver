@@ -1,1 +1,4 @@
 /.vs/
+*.obj
+TurnOver/bin/GUI.obj
+*.obj

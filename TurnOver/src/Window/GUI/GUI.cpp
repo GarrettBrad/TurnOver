@@ -121,14 +121,12 @@ void GUI::EquipmentAdjustment()
 
 	ImGui::Begin(it->id.c_str());
 
-	ImGui::Text("Work Done.");
-	ImGui::NewLine();
+	ImGui::Text("Work Done:");
 	ImGui::TextWrapped(it->WorkDone.c_str());
 
 	ImGui::NewLine();
 
-	ImGui::Text("Work Needed.");
-	ImGui::NewLine();
+	ImGui::Text("Work Needed:");
 	ImGui::TextWrapped(it->WorkNeeded.c_str());
 
 	if (ImGui::Button("Edit.")) {
@@ -149,12 +147,17 @@ void GUI::EquipmentAdjustment()
 
 	ImGui::Begin("Turnover Adjustment");
 	
+	
+	ImGui::Text("Work Done:");
 	ImGui::InputTextMultiline("", &workDoneInput);
+
+	ImGui::NewLine();
 	ImGui::NewLine();
 
-	ImGui::InputTextWithHint("", "Shift lead", &workDoneInputWho);
+	ImGui::Text("Work Needed:");
+	ImGui::InputTextMultiline("", &workNeededInput);
 
-	// ImGui::InputTextMultiline("", &workNeededInput);
+	ImGui::InputTextWithHint("", "Shift Lead", &workDoneInputWho);
 
 	ImGui::End();
 }

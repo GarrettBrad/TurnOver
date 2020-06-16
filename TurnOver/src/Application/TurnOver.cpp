@@ -12,17 +12,18 @@ int TurnOver::InitInter()
 
 	if (Window::CreateWindow()) return -1;
 
+	// Temp for testing
 	m_Equipment.emplace_back(
-		std::string("E0145"),
-		std::string("Uninstalled Engine"),
+		std::string("A0001"),
+		std::string("Uninstalled Engine, blah, blah, blah, blah, blah, blah, blah, blah, blah, blach, blah,, blah, blah, blah, blah, blah, blach, blah,, blah, blah, blah, blah, blah, blach, blah,"),
 		std::string("KTLS, install, 7 level upon removal, long string. stuff to add, idk, pryometer, lube")
 	);
 	
-	/*m_Equipment.emplace_back(
-		std::string("E0146"),
-		std::string("Uninstalled Engine"),
+	m_Equipment.emplace_back(
+		std::string("E0006"),
+		std::string("Removed oil pump"),
 		std::string("KTLS, install, 7 level upon removal, long string. stuff to add, idk, pryometer, lube")
-	);*/
+	);
 
 	return 0;
 }

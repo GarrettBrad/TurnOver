@@ -9,7 +9,8 @@ struct Equipment
 	std::string WorkDone;
 	std::string WorkNeeded;
 
-	Equipment(std::string i, std::string wd, std::string wn)
+	// Should add move semantics
+	Equipment(const std::string& i, const std::string& wd, const std::string& wn)
 		: id(i), WorkDone(wd), WorkNeeded(wn)
 	{
 
